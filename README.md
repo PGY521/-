@@ -1,1 +1,1 @@
-[# -](https://pgy521.github.io/-/)
+https://pgy521.github.io/-/
