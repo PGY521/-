@@ -13,6 +13,26 @@ function updateClock() {
     document.getElementById('hour').textContent = hours;
     document.getElementById('minute').textContent = minutes;
     document.getElementById('second').textContent = seconds;
+
+    // 动态背景根据时间变化
+    updateBackground(hours);
+}
+
+// 更新背景色根据时段
+function updateBackground(hours) {
+    if (hours >= 6 && hours < 12) {
+        // 早晨：温暖的黄色和橙色渐变
+        document.body.style.backgroundColor = "#FFD700"; // 金色
+    } else if (hours >= 12 && hours < 18) {
+        // 白天：清新的蓝色
+        document.body.style.backgroundColor = "#87CEEB"; // 天蓝色
+    } else if (hours >= 18 && hours < 21) {
+        // 傍晚：紫色渐变
+        document.body.style.backgroundColor = "#800080"; // 紫色
+    } else {
+        // 夜晚：深蓝色渐变
+        document.body.style.backgroundColor = "#2C3E50"; // 深蓝色
+    }
 }
 
 // 每秒钟更新一次
