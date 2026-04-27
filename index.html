@@ -3,75 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLO 3D 中国版</title>
+    <title>北京时间时钟</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 首页 Banner -->
-    <header class="hero-section">
-        <div class="hero-content">
-            <h1>引领未来的3D服装设计</h1>
-            <p>在 CLO 3D 上，创造无限可能的服装设计</p>
-            <a href="#features" class="btn">了解更多</a>
+    <div class="clock-container">
+        <div id="clock" class="clock">
+            <div id="hour" class="time"></div>
+            <div id="minute" class="time"></div>
+            <div id="second" class="time"></div>
         </div>
-    </header>
-
-    <!-- 功能介绍 -->
-    <section class="features" id="features">
-        <h2>功能介绍</h2>
-        <div class="features-list">
-            <div class="feature">
-                <h3>精准服装模拟</h3>
-                <p>实时模拟服装与人体的贴合度，帮助设计师迅速调整设计。</p>
-            </div>
-            <div class="feature">
-                <h3>高效设计流程</h3>
-                <p>通过高效的工具和操作界面，快速实现设计从草图到3D模型的转换。</p>
-            </div>
-            <div class="feature">
-                <h3>实时协作</h3>
-                <p>与团队成员实时共享设计文件，提升工作效率。</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 下载链接 -->
-    <section class="download">
-        <h2>立即下载 CLO 3D</h2>
-        <a href="https://www.clo3d.com/zh/download" class="btn">下载软件</a>
-    </section>
-
-    <!-- 客户案例 -->
-    <section class="clients">
-        <h2>我们的客户</h2>
-        <div class="client-logos">
-            <img src="https://via.placeholder.com/150" alt="客户1">
-            <img src="https://via.placeholder.com/150" alt="客户2">
-            <img src="https://via.placeholder.com/150" alt="客户3">
-        </div>
-    </section>
-
-    <!-- 联系我们 -->
-    <section class="contact">
-        <h2>联系我们</h2>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="您的名字" required>
-            <input type="email" name="email" placeholder="您的邮箱" required>
-            <textarea name="message" placeholder="留言内容" required></textarea>
-            <button type="submit">提交</button>
-        </form>
-    </section>
-
-    <!-- 底部 -->
-    <footer>
-        <p>&copy; 2026 CLO 3D 中国版 | All Rights Reserved</p>
-        <div class="social-links">
-            <a href="#">微博</a>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-        </div>
-    </footer>
+        <div class="label">北京时间</div>
+    </div>
 
     <script src="scripts.js"></script>
 </body>
